@@ -1,5 +1,6 @@
 import colors from "vuetify/es5/util/colors";
 export default {
+  target: "static",
   serverMiddleware: [
     "~/server/index.js", // Path to your Express server
   ],
