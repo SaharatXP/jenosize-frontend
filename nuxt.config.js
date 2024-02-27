@@ -1,9 +1,7 @@
 import colors from "vuetify/es5/util/colors";
 export default {
   target: "static",
-  serverMiddleware: [
-    "~/server/index.js", // Path to your Express server
-  ],
+
   // Global page headers: https://go.nuxtjs.dev/config-head
 
   head: {
@@ -29,7 +27,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: "~/plugins/firebase", ssr: false },
+    { src: "~/plugins/firebase", ssr: true },
     { src: "~/plugins/apexcharts.js", ssr: false },
   ],
 

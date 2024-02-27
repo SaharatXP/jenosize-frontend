@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import app from "~/plugins/firebase.js";
+
 import {
   getAuth,
   signInWithPopup,

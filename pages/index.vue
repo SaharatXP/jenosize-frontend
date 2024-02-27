@@ -190,6 +190,7 @@
 
 import BottomMenu from "~/components/BottomMenu.vue";
 export default {
+  middleware: "auth",
   components: {
     BottomMenu,
   },
@@ -313,7 +314,7 @@ export default {
         {
           icon: "mdi-gift",
           name: "Point",
-          num: 56,
+          num: 450,
           nn: "Points",
         },
 
@@ -346,6 +347,5 @@ export default {
     };
   },
   name: "IndexPage",
-  middleware: "auth",
 };
 </script>
