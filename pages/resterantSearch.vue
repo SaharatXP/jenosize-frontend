@@ -94,7 +94,7 @@ export default {
     getLocate() {
       console.log(this.searchQuery);
       this.$axios
-        .get("http://localhost:8080/search", {
+        .get("/search", {
           params: { name: this.searchQuery },
         })
         .then((response) => {

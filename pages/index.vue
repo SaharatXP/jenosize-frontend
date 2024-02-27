@@ -76,7 +76,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="6" v-for="item in cardBoards">
+        <v-col cols="6" v-for="item in cardBoards" v-bind:key="item.num">
           <v-card
             outlined
             class="text-center d-flex flex-column justify-center pa-3"
@@ -122,6 +122,7 @@
         <v-col
           cols="3"
           v-for="item in cardBoards"
+          v-bind:key="item.num"
           class="text-center justify-center d-flex"
         >
           <v-btn

@@ -22,6 +22,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
+  axios: {
+    baseURL: "https://jenosize-api.onrender.com/", // Used as fallback if no runtime config is provided
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [

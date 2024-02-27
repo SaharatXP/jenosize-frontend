@@ -65,7 +65,6 @@
 import { getAuth, signOut } from "firebase/auth";
 export default {
   name: "DefaultLayout",
-  inject: ["title"],
   data() {
     return {
       title: "Jenisize-Test",
